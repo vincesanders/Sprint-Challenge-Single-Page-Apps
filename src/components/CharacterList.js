@@ -13,7 +13,7 @@ export default function CharacterList() {
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
     // axios.get('https://rickandmortyapi.com/api/character/')
     //   .then(res => {
-    //     console.log(res);
+    //     // console.log(res);
     //     setCharacterData(res.data.results);
     //     setActiveCharacterData(res.data.results)
     //   })
@@ -23,11 +23,9 @@ export default function CharacterList() {
   return (
     <section className="character-list">
       <CharacterCard name='This is a test' status='Alive' species='human' />
-      {useEffect(() => {
-        characterData.map(char => (
-          <CharacterCard name={char.name} status={char.status} species={char.species} />
-        ));
-      },[activeCharacterData])}    
+      {activeCharacterData.map(char => (
+          <CharacterCard key={char.id} name={char.name} status={char.status} species={char.species} />
+        ))}    
     </section>
   );
 }
