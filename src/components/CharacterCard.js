@@ -7,6 +7,8 @@ const CardContainer = styled.div`
   box-shadow: 2px 3px 4px 2px rgba(0,0,0,0.6);
   color: white;
   padding: 10px;
+  border-radius: 15px;
+  margin: 15px;
 `
 
 const DataSpan = styled.span`
