@@ -38,7 +38,6 @@ export default function CharacterList() {
         activeCharacterData={activeCharacterData} 
         setActiveCharacterData={setActiveCharacterData} />
       <CharactersContainer>
-        <CharacterCard name='This is a test' status='Alive' species='human' />
         {activeCharacterData.map(char => (
             <CharacterCard key={char.id} name={char.name} status={char.status} species={char.species} />
           ))}    
