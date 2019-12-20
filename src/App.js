@@ -3,11 +3,13 @@ import { Route, link, Switch } from 'react-router-dom';
 import Header from "./components/Header.js";
 import WelcomePage from './components/WelcomePage';
 
+//TODO: change styling of Header Link
+
 
 export default function App() {
   return (
     <main>
-      <Header />
+      <Link to='/'><Header /></Link>
       <Switch>
         <Route path='/'>
           <WelcomePage />
