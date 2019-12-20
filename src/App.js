@@ -11,6 +11,9 @@ export default function App() {
     <main>
       <Link to='/'><Header /></Link>
       <Switch>
+        <Route path='/character-list'>
+          <CharacterList />
+        </Route>
         <Route path='/'>
           <WelcomePage />
         </Route>
