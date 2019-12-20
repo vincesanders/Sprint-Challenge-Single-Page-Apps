@@ -2,8 +2,6 @@ import React from "react";
 import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 
-//TODO: change styling of button
-
 
 const MainImg = styled.img`
   display: block;
