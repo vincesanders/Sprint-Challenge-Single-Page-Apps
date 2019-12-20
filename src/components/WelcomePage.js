@@ -1,5 +1,8 @@
 import React from "react";
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
+
+//TODO: change styling of button
 
 
 const MainImg = styled.img`
@@ -9,6 +12,11 @@ const MainImg = styled.img`
 `
 
 export default function WelcomePage() {
+  const history = useHistory();
+  const routeToCharacterList = () => {
+    history.push('/character-list');
+  }
+  
   return (
     <section className="welcome-page">
       <header>
@@ -17,6 +25,7 @@ export default function WelcomePage() {
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
           alt="rick"
         />
+        <button onClick={routeToCharacterList}>Character List</button>
       </header>
     </section>
   );
