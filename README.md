@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: After you initially load the page, you won't need to make any more server requests. This makes for a better experience for the user as they can quickly navigate through the site or app.
 
 ## Project Set Up
 
